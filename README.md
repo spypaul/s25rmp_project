@@ -1,10 +1,16 @@
 # s25rmp
+## Prerequisites
 
-Mesh files are large and not version controlled.  You can download them [here](https://sumailsyr-my.sharepoint.com/:u:/g/personal/gkatz01_syr_edu/EUKWyYSia3ZIm-fT52mZBVsBUEYFgXxSADCDQQiRCSegBw?e=KGUUel) (you'll need to be logged into your SU OneDrive account for access).  Then extract the zip archive into a sub-directory of this repository named "meshes".
+The required mesh file should be downloaded from [here](https://sumailsyr-my.sharepoint.com/:u:/g/personal/gkatz01_syr_edu/EUKWyYSia3ZIm-fT52mZBVsBUEYFgXxSADCDQQiRCSegBw?e=KGUUel).  Then, extract the zip archive into a sub-directory of this repository named "meshes".
 
-You also need to install the [PyBullet](https://pybullet.org/wordpress/) simulator.
+The [PyBullet](https://pybullet.org/wordpress/) simulator should be installed.
 
-Once PyBullet is installed and the meshes are extracted in the correct location, you can visualize the simulation environment.  Run this command from within the top-level folder of the repository:
+Other required libraries include: Pytorch, numpy, Scipy, and matplotlib. They can be installed through `pip3 install`
 
-`python simulation.py`
+## Run
 
+Run this command from within the top-level folder of the repository to start the evaluation:
+
+`python3 ./evaluation.py`
+
+The number of objects can be changed in line 96 of evaluation.py.
